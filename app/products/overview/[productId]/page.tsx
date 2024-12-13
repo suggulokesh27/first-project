@@ -1,7 +1,7 @@
 import ProductOverview from "@/app/component/ProductOverview";
 import { products } from "@/data/ProductItems";
 
-// Generate static params for all products
+// Generate static parameters for all products
 export async function generateStaticParams() {
   const products = [
     { id: 1 },
@@ -32,8 +32,8 @@ export async function generateStaticParams() {
 }
 
 // Define the page component
-const Page1 = async ({ params }: { params: { productId: string } }) => {
-  // Ensure products data is accessible
+const Page1 = ({ params }: { params: { productId: string } }) => {
+  // Use static data to find the product
   const product = products.find((p) => p.id.toString() === params.productId);
 
   if (!product) {
