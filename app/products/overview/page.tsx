@@ -1,13 +1,12 @@
 'use client';
 
-import { ReactNode } from 'react';
-
-interface OverviewProps {
-  children: ReactNode;
-}
-
-const Overview = ({ children }: OverviewProps) => {
-  return <div>{children}</div>;
+const Overview = () => {
+  return (
+    <div>
+      <h1>Overview Page</h1>
+      <p>Details about the product overview.</p>
+    </div>
+  );
 };
 
 export default Overview;
