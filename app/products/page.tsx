@@ -1,8 +1,10 @@
 
-export default function Home({children}:{children:React.ReactNode}) {
+export default function Home() {
     return (
         <>
-        {children}
+        <h2>
+            this is the product page
+        </h2>
         </>
     )
 }
