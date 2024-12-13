@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import ProductOverview from "@/app/component/ProductOverview";
 import { products } from "@/data/ProductItems";
 
