@@ -32,13 +32,13 @@ export async function generateStaticParams() {
 }
 
 // Define the page component
-const Page1 = ({ params }: { params: { productId: string } }) => {
-  // Use static data to find the product
-  const product = products.find((p) => p.id.toString() === params.productId);
+const Page1 = async({ params }: { params: Promise<{ productId: string }>  }) => {
+  // // Use static data to find the product
+  // const product = products.find((p) => p.id.toString() === params.productId);
 
-  if (!product) {
-    return <p>Product not found</p>;
-  }
+  // if (!product) {
+  //   return <p>Product not found</p>;
+  // }
 
   return (
     <div>
